@@ -25,6 +25,7 @@
             :width="319"
             :height="242"
             format="webp"
+            alt="Lorem ipsum"
             src="img/header.png"
           />
 
@@ -42,6 +43,7 @@
           :width="422"
           :height="322"
           format="webp"
+          alt="Lorem ipsum"
           src="img/header.png"
         />
       </div>

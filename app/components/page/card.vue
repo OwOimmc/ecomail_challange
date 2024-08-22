@@ -11,6 +11,7 @@
       class="min-h-[17.7rem] rounded-t-[1.5rem] object-cover sm:min-h-[20rem] lg:min-h-[21.8rem]"
       :src="`./img/category/${img}`"
       :srcset="`./img/category/${img}.png 1x, ./img/category/${img}@2x.png 2x`"
+      :alt="data.title"
     />
 
     <div class="bg-g-gray flex h-full flex-col rounded-b-[1.5rem] p-32">
