@@ -17,11 +17,11 @@ docke-compose up
 generate mode
 
 ```bash
-docker compose run node npm run gereneta
+docker compose run node npm run generate
 ```
 
 ```bash
-docker-compose run node npm run gereneta
+docker-compose run node npm run generate
 ```
 
 vygeneruje komplet web do složky
