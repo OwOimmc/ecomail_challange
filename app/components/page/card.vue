@@ -5,12 +5,14 @@
     >
       {{ data.rating?.rate }}/5
     </span>
-    <NuxtImg
-      class="min-h-[17.7rem] rounded-t-[1.5rem] object-cover sm:min-h-[20rem] lg:min-h-[21.8rem]"
+    <img
       width="392"
       height="200"
-      :src="`img/category/${img}`"
+      class="min-h-[17.7rem] rounded-t-[1.5rem] object-cover sm:min-h-[20rem] lg:min-h-[21.8rem]"
+      :src="`./img/category/${img}`"
+      :srcset="`./img/category/${img}.png 1x, ./img/category/${img}@2x.png 2x`"
     />
+
     <div class="bg-g-gray flex h-full flex-col rounded-b-[1.5rem] p-32">
       <h3
         class="text-emerald mb-32 text-[2.8rem] font-bold leading-[3.2rem] tracking-[-.056rem] sm:text-[3.2rem] sm:leading-[3.5rem]"
@@ -37,10 +39,10 @@ const props = defineProps({
 })
 
 const category = {
-  jewelery: 'jewelery.png',
-  "women's clothing": 'women.png',
-  electronics: 'electronics.png',
-  "men's clothing": 'men.png'
+  jewelery: 'jewelery',
+  "women's clothing": 'women',
+  electronics: 'electronics',
+  "men's clothing": 'men'
 }
 
 const img = computed(() => {
