@@ -1,0 +1,14 @@
+
+services:
+  node:
+    image: node:20.13.1
+    user: '1000:1000'
+    volumes:
+      - ./app/:/app/
+    ports:
+      - 3000:3000
+      - 4000:4000
+      - 4001:4001
+      - 5000:5000
+    working_dir: /app
+    command: bash -c "npm install && npm run dev -- -o"
