@@ -44,7 +44,7 @@ const itemsPerPage = computed(() => {
 const sortOrder = ref('desc')
 
 const sortedData = computed(() => {
-  return data.value.slice().sort((a, b) => {
+  return data.value.sort((a, b) => {
     if (sortOrder.value === 'asc') {
       return a.rating.rate - b.rating.rate
     } else {
