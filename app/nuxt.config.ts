@@ -1,6 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  // TODO devtools na .env
   devtools: { enabled: true },
   telemetry: false,
   compatibilityDate: '2024-04-03',
