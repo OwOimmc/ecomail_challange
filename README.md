@@ -9,7 +9,7 @@ docker compose up
 ```
 
 ```bash
-docke-compose up
+docker-compose up
 ```
 
 ## Deploy
